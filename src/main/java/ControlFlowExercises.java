@@ -4,12 +4,11 @@ public class ControlFlowExercises {
             System.out.println(i);
         }
 
-        int i = 100;
+        long i = 2;
         do {
             System.out.println(i);
-            i -= 5;
-        } while (i >= -10);
+            i *= i;
+        } while (i < 1000000);
 
-// Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
     }
 }

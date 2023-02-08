@@ -18,7 +18,7 @@ public class ConsoleExercises {
 
         scanner.nextLine();
 
-        System.out.format("You entered: %s%n%s%n%s%n", word1, word2, word3);
+        System.out.format("You entered:%n%s%n%s%n%s%n", word1, word2, word3);
 
         System.out.println("Please enter a sentence");
 

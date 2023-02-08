@@ -9,7 +9,7 @@ public class ConsoleExercises {
 
         System.out.print("Enter an integer: ");
         int userInt = scanner.nextInt();
-        System.out.format("You entered %d", userInt);
+        System.out.format("You entered %d%n", userInt);
 
         System.out.println("Please enter three words");
         String word1 = scanner.next();

@@ -28,6 +28,15 @@ public class ControlFlowExercises {
             userContinue = scanner.nextLine();
         } while ("y".equals(userContinue.toLowerCase().substring(0, 1)));
 
+        do {
+            System.out.format("%nPlease enter a numerical number grade (0-100): ");
+            String numberGrade = scanner.nextLine();
+            String grade = getLetterGrade(Short.parseShort(numberGrade));
+            System.out.format("You entered %s. The letter grade is %s%n", Short.parseShort(numberGrade), grade);
+            System.out.format("%nWould you like to continue? [y/n] ");
+            userContinue = scanner.nextLine();
+        } while ("y".equals(userContinue.toLowerCase().substring(0, 1)));
+
         scanner.close();
 
     }
@@ -63,6 +72,41 @@ public class ControlFlowExercises {
             } else {
                 System.out.println(i);
             }
+        }
+    }
+
+    /**
+     * Grade Ranges:
+     * A+	:	100 - 99
+     * A	:	88-98
+     * B+	:	87 - 86
+     * B	:	85 - 80
+     * C+	:	79 - 78
+     * C	:	77 - 67
+     * D+	:	66 - 65
+     * D	:	64 - 60
+     * F+	:	59 - 58
+     * F	:	57 - 0
+     */
+    public static String getLetterGrade(short grade) {
+        if(grade >= 99) {
+            return "A+";
+        } else if (grade >= 88) {
+            return "A";
+        } else if (grade >= 86) {
+            return "B+";
+        } else if (grade >= 80) {
+            return "B";
+        } else if (grade >= 78) {
+            return "C+";
+        } else if (grade >= 67) {
+            return "C";
+        } else if (grade >= 65) {
+            return "D+";
+        } else if (grade >= 60) {
+            return "D";
+        } else {
+            return "F";
         }
     }
 }

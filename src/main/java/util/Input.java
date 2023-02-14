@@ -19,7 +19,11 @@ public class Input {
     }
 
     public boolean yesNo() {
-        System.out.format("%nWould you like to continue? [y/n] ");
+        return yesNo("%nWould you like to continue? [y/n] ");
+    }
+
+    public boolean yesNo(String prompt) {
+        System.out.format(prompt);
         String response = getString();
         return "y".toLowerCase().equals(response) ||
                 "yes".toLowerCase().equals(response) ||

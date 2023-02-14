@@ -8,7 +8,7 @@ public class Input {
 
     private final Scanner scanner;
 
-    Input() {
+    public Input() {
         this.scanner = new Scanner(System.in);
     }
 

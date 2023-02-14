@@ -1,6 +1,7 @@
 package exercises;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class ArraysExercises {
 
@@ -14,6 +15,14 @@ public class ArraysExercises {
         System.out.println(Arrays.toString(people));
         people = addPerson(people, new Person("Jack"));
         System.out.println(Arrays.toString(people));
+        // Using streams to dupicate the above functionality for fun
+        System.out.printf("%s%s%s",
+                "[",
+                Arrays.stream(people)
+                        .map(Person::toString)
+                        .collect(Collectors.joining(", ")),
+                "]");
+
     }
 
     public static Person[] addPerson(Person[] people, Person person) {

@@ -12,10 +12,10 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    public String getString() {
-        String line = scanner.next();
-        scanner.nextLine();
-        return line;
+    public String getString(String... prompt) {
+        if( prompt.length > 0)
+            System.out.format(prompt[0]);
+        return scanner.nextLine();
     }
 
     public boolean yesNo() {
@@ -52,7 +52,7 @@ public class Input {
         if (prompt.length > 0) {
             output = prompt[0];
         } else {
-            output = String.format("Enter a number between %f and %f: ", min, max);
+            output = String.format("Enter a number between %s and %s: ", min, max);
         }
         System.out.format(output);
         double userInput = Double.parseDouble(getString());

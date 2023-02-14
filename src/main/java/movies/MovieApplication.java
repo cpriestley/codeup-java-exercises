@@ -23,7 +23,7 @@ public class MovieApplication {
                     "Enter your choice: ");
             int choice = input.getInt(0, categories.length);
             if (choice == categories.length)
-                movies = addMovie(movies, input);
+                movies = addMovie(movies, categories, input);
             else
                 displayCategory(movies, categories[choice]);
         } while (input.yesNo());
@@ -32,14 +32,15 @@ public class MovieApplication {
 
     }
 
-    private static Movie[] addMovie(Movie[] movies, Input input) {
-        Movie movie = createMovie(input);
+    private static Movie[] addMovie(Movie[] movies, String[] categories, Input input) {
+        Movie movie = createMovie(categories, input);
+        System.out.format("%n%s has been added to %s%n", movie.getName(), movie.getCategory());
         movies = Arrays.copyOf(movies, movies.length + 1);
         movies[movies.length - 1] = movie;
         return movies;
     }
 
-    private static Movie createMovie(Input input) {
+    private static Movie createMovie(String[] categories, Input input) {
 
         String name;
         do {
@@ -48,10 +49,14 @@ public class MovieApplication {
 
         String category;
         do {
-           category = input.getString("Enter the movie category: ");
-        } while (category.isEmpty());
+            String cats = Arrays.stream(categories)
+                    .filter(c -> !"all".equals(c))
+                    .toList()
+                    .toString();
+           category = input.getString(String.format("Enter the movie category %s: ", cats));
+        } while (category.isEmpty() || !Arrays.asList(categories).contains(category));
 
-        return new Movie(name, category);
+        return new Movie(name, category.toLowerCase());
     }
 
     private static void displayCategory(Movie[] movies, String category) {

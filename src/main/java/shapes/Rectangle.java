@@ -1,19 +1,21 @@
 package shapes;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.NonNull;
 
-@Data
-@AllArgsConstructor
-public class Rectangle {
-    protected double length;
-    protected double width;
+public class Rectangle extends Quadrilateral implements Measurable {
 
-    public double getArea() {
-        return length * width;
+    protected Rectangle(@NonNull double length, @NonNull double width) {
+        super(length, width);
     }
 
-    public double getPerimiter() {
-        return 2 * length + 2 * width;
+    @Override
+    public void setLength(double length) {
+        this.length = length;
     }
+
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
 }

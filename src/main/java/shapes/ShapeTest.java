@@ -18,12 +18,20 @@ public class ShapeTest {
          * create a variable of the type Rectangle named box2 and assign it
          * a new instance of the Square class that has a side value of 5.
          */
-        Rectangle box2 = new Square(5);
+        Quadrilateral box2 = new Square(5);
 
         /*
          * verify that the getPerimeter and getArea methods return 20 and 25, respectively.
          */
-        System.out.format("Square perimiter: %s%n", box2.getPerimiter());
-        System.out.format("Square area: %s%n", box2.getArea());
+        System.out.format("Quadrilateral Square perimiter: %s%n", box2.getPerimiter());
+        System.out.format("Quadrilateral Square area: %s%n", box2.getArea());
+
+        Measurable myShape = new Square(5);
+        System.out.format("Measurable Square perimiter: %s%n", myShape.getPerimiter());
+        System.out.format("Measurable Square area: %s%n", myShape.getArea());
+
+        myShape = new Rectangle(5, 4);
+        System.out.format("Measurable Rectangle perimiter: %s%n", myShape.getPerimiter());
+        System.out.format("Measurable Rectangle area: %s%n", myShape.getArea());
     }
 }

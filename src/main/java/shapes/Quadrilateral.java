@@ -24,13 +24,4 @@ public abstract class Quadrilateral extends Shape implements Measurable {
 
     public abstract void setWidth(double width);
 
-    @Override
-    public double getArea() {
-        return length * width;
-    }
-
-    @Override
-    public double getPerimiter() {
-        return 2 * length + 2 * width;
-    }
 }

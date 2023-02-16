@@ -23,15 +23,15 @@ public class ShapeTest {
         /*
          * verify that the getPerimeter and getArea methods return 20 and 25, respectively.
          */
-        System.out.format("Quadrilateral Square perimiter: %s%n", box2.getPerimiter());
-        System.out.format("Quadrilateral Square area: %s%n", box2.getArea());
+        System.out.format("Quadrilateral<-Square perimiter: %s%n", box2.getPerimiter());
+        System.out.format("Quadrilateral<-Square area: %s%n", box2.getArea());
 
         Measurable myShape = new Square(5);
-        System.out.format("Measurable Square perimiter: %s%n", myShape.getPerimiter());
-        System.out.format("Measurable Square area: %s%n", myShape.getArea());
+        System.out.format("Measurable<-Square perimiter: %s%n", myShape.getPerimiter());
+        System.out.format("Measurable<-Square area: %s%n", myShape.getArea());
 
         myShape = new Rectangle(5, 4);
-        System.out.format("Measurable Rectangle perimiter: %s%n", myShape.getPerimiter());
-        System.out.format("Measurable Rectangle area: %s%n", myShape.getArea());
+        System.out.format("Measurable<-Rectangle perimiter: %s%n", myShape.getPerimiter());
+        System.out.format("Measurable<-Rectangle area: %s%n", myShape.getArea());
     }
 }

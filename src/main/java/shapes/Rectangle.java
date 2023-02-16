@@ -18,4 +18,14 @@ public class Rectangle extends Quadrilateral implements Measurable {
         this.width = width;
     }
 
+    @Override
+    public double getArea() {
+        return length * width;
+    }
+
+    @Override
+    public double getPerimiter() {
+        return 2 * length + 2 * width;
+    }
+
 }

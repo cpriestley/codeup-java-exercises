@@ -19,4 +19,14 @@ public class Square extends Quadrilateral {
         width = side;
     }
 
+    @Override
+    public double getArea() {
+        return length * width;
+    }
+
+    @Override
+    public double getPerimiter() {
+        return 2 * length + 2 * width;
+    }
+
 }

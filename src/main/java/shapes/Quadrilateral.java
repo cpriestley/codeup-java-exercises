@@ -24,4 +24,13 @@ public abstract class Quadrilateral extends Shape implements Measurable {
 
     public abstract void setWidth(double width);
 
+    @Override
+    public double getArea() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public double getPerimiter() {
+        throw new UnsupportedOperationException();
+    }
 }

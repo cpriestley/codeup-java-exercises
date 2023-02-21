@@ -86,7 +86,9 @@ public class MethodsExercises {
 
     public static int getInteger(int min, int max) {
         System.out.format("Enter a whole number between %d and %d: ", min, max);
-        int userInput = Integer.parseInt(scanner.nextLine());
+        String nextLine = scanner.nextLine();
+        nextLine = nextLine.isEmpty() ? String.valueOf(min-1): nextLine;
+        int userInput = Integer.parseInt(nextLine);
         if (userInput < min || userInput > max) {
             System.out.format("Invalid input. Please enter a number between %d and %d.%n", min, max);
             return getInteger(min, max);

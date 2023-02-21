@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class StudentTest {
 
     public static void main(String[] args) {
-        Student stud = new Student("clayton");
+        Student stud = new Student("clayton", "cpriestley");
 
-        double[] grades = {100, 91, 97, 89, 88};
+        int[] grades = {100, 91, 97, 89, 88};
 
-        for (double grade : grades) {
+        for (int grade : grades) {
             stud.addGrade(grade);
         }
 

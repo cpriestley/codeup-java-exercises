@@ -1,0 +1,97 @@
+Fruit:
+  - Plum
+  - Apricot
+  - Pear
+  - Oranges
+  - Apple
+  - Pineapple
+  - Grapefruit
+  - Watermelon
+  - Blueberry
+  - Cantaloupe
+  - Banana
+  - Coconut
+  - Lemon
+  - Lime
+  - Mango
+  - Nectarine
+  - Peach
+  - Blackberry
+  - Cherry
+  - Kiwi
+Vegetables:
+  - Artichokes
+  - Asparagus
+  - Avocados
+  - Broccoli
+  - Cauliflower
+  - Cabbage
+  - Celery
+  - Cucumbers
+  - Corn
+  - Lettuce
+  - Mushrooms
+  - Onions
+  - Garlic
+  - Bell Peppers
+  - Potatoes
+  - Carrots
+  - Tomatoes
+  - Squash
+  - Peas
+  - Eggplant
+Dairy:
+  - Milk
+  - Organic Milk
+  - Whole Milk
+  - 2% Milk
+  - Almond Milk
+  - Soy Milk
+  - Oat Milk
+  - Cream
+  - Sour Cream
+  - Yogurt
+  - Buttermilk
+  - Cream Cheese
+  - Salted Butter
+  - Unsalted Butter
+  - Margarine
+  - Ghee
+  - Shortening
+Meat:
+  - Beef
+  - Ground Beef
+  - Steak
+  - Roast
+  - Chicken
+  - Chicken Breast
+  - Chicken Thighs
+  - Chicken Wings
+  - Pork
+  - Ground Pork
+  - Ham
+  - Bacon
+  - Hot Dogs
+  - Turkey
+  - Ground Turkey
+  - Sausage
+Baking:
+  - Flour
+  - Sugar
+  - Baking Powder
+  - Baking Soda
+  - Salt
+  - Vanilla
+  - Chocolate Chips
+  - Cocoa Powder
+  - Cinnamon
+  - Nutmeg
+  - Allspice
+  - Cloves
+  - Cornstarch
+  - Corn Syrup
+  - Molasses
+  - Brown Sugar
+  - White Sugar
+  - Powdered Sugar
+

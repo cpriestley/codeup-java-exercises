@@ -1,10 +1,10 @@
 package util;
 
-import java.util.Scanner;
-
 import exercises.MethodsExercises;
 
-public class Input {
+import java.util.Scanner;
+
+public class Input implements AutoCloseable {
 
     private final Scanner scanner;
 
@@ -63,4 +63,8 @@ public class Input {
         return userInput;
     }
 
+    @Override
+    public void close() {
+        scanner.close();
+    }
 }

@@ -84,7 +84,7 @@ public class MethodsExercises {
         return result;
     }
 
-    public static int getInteger(int min, int max) {
+    public static int getInteger(int min, int max) throws NumberFormatException {
         System.out.format("Enter a whole number between %d and %d: ", min, max);
         String nextLine = scanner.nextLine();
         nextLine = nextLine.isEmpty() ? String.valueOf(min-1): nextLine;

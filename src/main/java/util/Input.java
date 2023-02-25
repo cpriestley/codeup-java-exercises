@@ -34,7 +34,13 @@ public class Input implements AutoCloseable {
     }
 
     public int getInt(int min, int max) {
-        return MethodsExercises.getInteger(min, max);
+        int i = 0;
+        try {
+            i = MethodsExercises.getInteger(min, max);
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
+        }
+        return i;
     }
 
     public double getDouble(String... prompt) {
